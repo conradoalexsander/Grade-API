@@ -59,6 +59,7 @@ const update = async (req, res) => {
   const id = req.params.id;
 
   try {
+    console.log(id);
     const grade = await gradeModel.findOneAndUpdate(
       {
         _id: req.params.id
